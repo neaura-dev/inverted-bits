@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 
 using namespace std;
 
@@ -36,13 +35,11 @@ unsigned long long makeMask(int count, int lowBit) {
 }
 
 int main() {
-    system("cls");
     
     // Type select
     cout << "Select type of number (0 - short int, 1 - double): ";
     bool numberType;
     cin >> numberType;
-    system("cls");
 
     // Number input
     cout << "Enter ";
@@ -60,7 +57,6 @@ int main() {
     else {
         cin >> userNumber.doubleNumber;
     }
-    system("cls");
 
     // Conditions input
     cout << "Enter count of bits that will be inverted: ";
@@ -78,7 +74,6 @@ int main() {
         cout << "Error! The high bit is too high!";
         return -2;
     }
-    system("cls");
 
     // Output
     cout << "Number: ";
